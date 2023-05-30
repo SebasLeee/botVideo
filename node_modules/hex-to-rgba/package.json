@@ -1,0 +1,43 @@
+{
+  "name": "hex-to-rgba",
+  "version": "2.0.1",
+  "description": "Converts hexadecimal color codes to rgb()/rgba() values.",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "lint": "eslint src",
+    "mocha": "mocha --require @babel/register",
+    "prepublish": "yarn build && yarn test",
+    "release": "np",
+    "test": "yarn lint && yarn mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misund/hex-to-rgba.git"
+  },
+  "author": "Just Thomas Hiorth Misund",
+  "keywords": [
+    "colors",
+    "hex",
+    "rgba",
+    "css"
+  ],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/misund/hex-to-rgba/issues"
+  },
+  "homepage": "https://github.com/misund/hex-to-rgba#readme",
+  "devDependencies": {
+    "@babel/cli": "7.5.0",
+    "@babel/core": "7.5.4",
+    "@babel/preset-env": "7.5.4",
+    "@babel/register": "7.4.4",
+    "eslint": "6.0.1",
+    "eslint-config-airbnb": "17.1.1",
+    "eslint-plugin-import": "2.18.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.14.2",
+    "mocha": "6.1.4",
+    "np": "5.0.3"
+  }
+}
